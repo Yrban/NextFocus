@@ -53,7 +53,7 @@ struct FocusField: View {
     
     @Binding var object: FocusObject
     @Binding var focus: UUID?
-    var nextFocus: () -> Void
+    var nextFocus: () -> Void // This closure allows the view to call the closure which implements the focus logic.
     
     @FocusState var isFocused: UUID?
 
